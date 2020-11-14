@@ -13,12 +13,7 @@ namespace BlogWithBootstrap.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            List<User> users;
-            using (BlogContext db = new BlogContext())
-            {
-                users = db.Users.AsNoTracking().ToList();
-            }
-            return View(users);
+            return View();
         }
     }
 }

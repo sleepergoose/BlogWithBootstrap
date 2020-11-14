@@ -9,23 +9,17 @@
     <script src="~/Scripts/modernizr-2.8.3.js"></script>
 </head>
 <body>
+        
+
+        <div class="container">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </footer>
+        </div>
+  
     
-    <div class="container-fluid">
-        <nav class="nav navbar-expand-md navbar-dark bg-dark p-2 pl-4">
-            <a class="navbar-brand" href="#">Brand</a>
-        </nav>
-        <button class="">
-
-        </button>
-    </div>
-
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
 
     <script src="~/Scripts/jquery-3.4.1.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>

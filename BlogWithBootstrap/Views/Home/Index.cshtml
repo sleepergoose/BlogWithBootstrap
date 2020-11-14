@@ -2,33 +2,3 @@
 @{
     ViewBag.Title = "Index";
 }
-
-<h2>Index</h2>
-
-@model IEnumerable<BlogWithBootstrap.Models.User>
-
-<div class="container">
-    <table class="table table-striped">
-        <thead class="thead-dark">
-            <tr>
-                <th>UserId</th>
-                <th>User Name</th>
-                <th>User Role</th>
-                <th>User Email</th>
-            </tr>
-        </thead>
-        <tbody>
-            @{
-                foreach (var item in Model)
-                {
-                     <tr>
-                         <td>@item.UserId</td>
-                         <td>@item.Name</td>
-                         <td>@item.Role</td>
-                         <td>@item.Email</td>
-                     </tr>
-                }
-            }
-        </tbody>
-    </table>
-</div>
